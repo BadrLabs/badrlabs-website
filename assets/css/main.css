@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f5f1e8;
+  --color-charcoal: #3c2415;
+  --color-terracotta: #d4834a;
+  --color-navy: #1e3a5f;
+  --color-orange-600: #d4834a;
+  --color-blue-900: #1e3a5f;
+}
+
+/* .bg-cream { */
+/*   background-color: #f5f1e8; */
+/* } */
+/**/
+/* .text-charcoal { */
+/*   color: #3c2415; */
+/* } */
+/**/
+/* .text-terracotta { */
+/*   color: #d4834a; */
+/* } */
+/**/
+/* .bg-terracotta { */
+/*   background-color: #d4834a; */
+/* } */
+/**/
+/* .border-cream { */
+/*   border-color: #f5f1e8; */
+/* } */
+/**/
+/* .bg-navy { */
+/*   background-color: #1e3a5f; */
+/* } */
+/**/
+/* .text-navy { */
+/*   color: #1e3a5f; */
+/* } */
+/**/
+/* .border-navy { */
+/*   border-color: #1e3a5f; */
+/* } */
+/**/
+/* .from-terracotta { */
+/*   --tw-gradient-from: #d4834a; */
+/* } */
+/**/
+/* .to-navy { */
+/*   --tw-gradient-to: #1e3a5f; */
+/* } */
+/**/
+/* .border-terracotta\/30 { */
+/*   border-color: rgba(212, 131, 74, 0.3); */
+/* } */
+/**/
+/* .from-terracotta\/10 { */
+/*   --tw-gradient-from: rgba(212, 131, 74, 0.1); */
+/* } */
+/**/
+/* .to-navy\/10 { */
+/*   --tw-gradient-to: rgba(30, 58, 95, 0.1); */
+/* } */
+/**/
+/* .from-terracotta\/20 { */
+/*   --tw-gradient-from: rgba(212, 131, 74, 0.2); */
+/* } */
+/**/
+/* .to-navy\/20 { */
+/*   --tw-gradient-to: rgba(30, 58, 95, 0.2); */
+/* } */
+/**/
+/* .from-navy\/5 { */
+/*   --tw-gradient-from: rgba(30, 58, 95, 0.05); */
+/* } */
+/**/
+/* .to-terracotta\/5 { */
+/*   --tw-gradient-to: rgba(212, 131, 74, 0.05); */
+/* } */
