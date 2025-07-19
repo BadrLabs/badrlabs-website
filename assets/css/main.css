@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,6 +8,17 @@
   --color-accent-dark: #d4834a;
   --color-background: #FAF1E0;
 }
+
+/* Font family utilities */
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+
 
 /* .bg-cream { */
 /*   background-color: #f5f1e8; */

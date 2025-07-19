@@ -1,109 +1,28 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-background via-white to-background">
-    <!-- Navigation -->
-    <nav
-      class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-background z-50"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex items-center space-x-3">
-            <img src="/badrlabs-no-text.jpg" alt="BadrLabs" class="h-10 w-10" />
-            <span class="text-2xl font-bold text-secondary">BadrLabs</span>
-          </div>
-          <div class="hidden md:flex space-x-8">
-            <a
-              href="#process"
-              class="text-secondary hover:text-terracotta transition-colors"
-              >Process</a
-            >
-            <a
-              href="#tech"
-              class="text-secondary hover:text-terracotta transition-colors"
-              >Tech Stack</a
-            >
-            <a
-              href="#team"
-              class="text-secondary hover:text-terracotta transition-colors"
-              >Team</a
-            >
-            <a
-              href="#contact"
-              class="text-secondary hover:text-terracotta transition-colors"
-              >Contact</a
-            >
-          </div>
-          <button class="md:hidden" @click="toggleMobileMenu">
-            <Menu class="h-6 w-6 text-secondary" />
-          </button>
-        </div>
-      </div>
 
-      <!-- Mobile Menu -->
-      <div
-        v-if="mobileMenuOpen"
-        class="md:hidden bg-white border-t border-background"
-      >
-        <div class="px-4 py-2 space-y-2">
-          <a
-            href="#process"
-            class="block py-2 text-secondary hover:text-terracotta"
-            >Process</a
-          >
-          <a href="#tech" class="block py-2 text-secondary hover:text-terracotta"
-            >Tech Stack</a
-          >
-          <a href="#team" class="block py-2 text-secondary hover:text-terracotta"
-            >Team</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-secondary hover:text-terracotta"
-            >Contact</a
-          >
-        </div>
-      </div>
-    </nav>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center">
-          <div class="relative inline-block mb-8">
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-terracotta to-primary rounded-full blur-3xl opacity-20 scale-150"
-            />
-            <img
-              src="/badrlabs-no-text.jpg"
-              alt="BadrLabs"
-              class="relative h-24 w-24 mx-auto"
-            />
-          </div>
-          <h1 class="text-5xl md:text-7xl font-bold text-secondary mb-6">
-            Crafting Digital
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-terracotta to-primary"
-            >
-              Excellence
-            </span>
-          </h1>
-          <p
-            class="text-xl md:text-2xl text-secondary/70 mb-8 max-w-3xl mx-auto leading-relaxed"
-          >
-            We specialize in fullstack applications that transform businesses
-            across industries. From concept to deployment, we bring your vision
-            to life with cutting-edge technology.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              class="bg-gradient-to-r from-terracotta to-accent-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              Start Your Project
-            </button>
-            <button
-              class="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300"
-            >
-              View Our Work
-            </button>
+    <section class="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-secondary">
+          Clarity Through Code
+        </h1>
+        <p class="text-xl md:text-2xl text-secondary/70 mb-8 max-w-3xl mx-auto leading-relaxed">
+          We design, build, and deploy custom software — fast, clean, focused.
+        </p>
+        <a
+          href="#contact"
+          class="mt-8 bg-gradient-to-br from-accent via-accent to-accent-dark text-white px-8 py-4 rounded-full font-semibold hover:from-accent-dark hover:via-accent-dark hover:to-accent transform hover:scale-105 transition-all duration-300 inline-block shadow-xl border-2 border-accent-dark/30 backdrop-blur-sm hover:shadow-2xl hover:border-accent-dark/50 relative overflow-hidden"
+        >
+          <div class="absolute inset-0 bg-gradient-to-t from-accent-dark/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+          <span class="relative z-10">Start a project</span>
+        </a>
+        
+        <!-- Down Arrow -->
+        <div class="mt-16 flex justify-center">
+          <div class="text-secondary animate-bounce">
+            <ChevronDown class="h-8 w-8" />
           </div>
         </div>
       </div>
@@ -390,9 +309,8 @@
 </template>
 
 <script setup type="ts">
-import { ref } from 'vue'
+
 import {
-  Menu,
   Search,
   Palette,
   Code,
@@ -407,14 +325,9 @@ import {
   Layers,
   Database,
   Smartphone,
-  Globe
+  Globe,
+  ChevronDown
 } from 'lucide-vue-next'
-
-const mobileMenuOpen = ref(false)
-
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-}
 
 const techStack = [
   { name: 'React', icon: 'div', description: 'Modern UI library' },

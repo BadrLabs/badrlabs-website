@@ -26,16 +26,11 @@
             {{ char }}
           </span>
         </h1>
-        <!-- Shrinking Ring (Two Circles) -->
+        <!-- Shrinking Ring -->
         <div
           v-if="showCircle"
-          class="absolute left-1/2 top-1/2 rounded-full pointer-events-none"
-          :style="outerCircleStyle"
-        ></div>
-        <div
-          v-if="showCircle"
-          class="absolute left-1/2 top-1/2 rounded-full pointer-events-none"
-          :style="innerCircleStyle"
+          class="absolute left-1/2 top-1/2 rounded-full pointer-events-none transition-all duration-1000 ease-out transform -translate-x-1/2 -translate-y-1/2"
+          :class="ringClass"
         ></div>
       </div>
     </div>
@@ -48,13 +43,12 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const isVisible = ref(true)
 const word = 'BadrLabs'
 const displayChars = ref<string[]>(Array(word.length).fill('.'))
-const typingDuration = 500 // ms
+const typingDuration = 700 // ms
 const secondaryColor = 'var(--color-secondary)'
 const primaryColor = 'var(--color-primary)'
 const backgroundColor = 'var(--color-background)'
 const showCircle = ref(false)
-const outerCircleStyle = ref<any>({})
-const innerCircleStyle = ref<any>({})
+const ringClass = ref(`w-[200vw] h-[200vw] border-[50px] border-[${primaryColor}] bg-transparent rounded-full`)
 
 function startTyping() {
   word.split('').forEach((letter, idx) => {
@@ -70,43 +64,11 @@ onMounted(() => {
   // After typing animation, show shrinking ring
   setTimeout(() => {
     showCircle.value = true
-    // Start with large circles covering the screen
-    outerCircleStyle.value = {
-      width: '200vw',
-      height: '200vw',
-      backgroundColor: primaryColor,
-      transform: 'translate(-50%, -50%) scale(1)',
-      transition: 'all 0.7s cubic-bezier(0.4,0,0.2,1)',
-      zIndex: 60,
-    }
-    innerCircleStyle.value = {
-      width: '180vw',
-      height: '180vw',
-      backgroundColor: 'transparent',
-      boxShadow: `0 0 0 9999px ${backgroundColor}`,
-      transform: 'translate(-50%, -50%) scale(1)',
-      transition: 'all 0.7s cubic-bezier(0.4,0,0.2,1)',
-      zIndex: 61,
-    }
-    // Animate the circles to shrink to the center
+    // Start with large ring covering the screen
+    ringClass.value = `w-[200vw] h-[200vw] border-[50px] border-[${primaryColor}] bg-transparent rounded-full`
+    // Animate the ring to shrink to the center
     setTimeout(() => {
-      outerCircleStyle.value = {
-        width: '0px',
-        height: '0px',
-        backgroundColor: primaryColor,
-        transform: 'translate(-50%, -50%) scale(1)',
-        transition: 'all 0.7s cubic-bezier(0.4,0,0.2,1)',
-        zIndex: 60,
-      }
-      innerCircleStyle.value = {
-        width: '0px',
-        height: '0px',
-        backgroundColor: 'transparent',
-        boxShadow: `0 0 0 9999px ${backgroundColor}`,
-        transform: 'translate(-50%, -50%) scale(1)',
-        transition: 'all 0.7s cubic-bezier(0.4,0,0.2,1)',
-        zIndex: 61,
-      }
+      ringClass.value = `w-32 h-32 border-[50px] border-[${primaryColor}] bg-transparent rounded-full`
     }, 10)
     // Hide preloader after circle animation
     setTimeout(() => {
