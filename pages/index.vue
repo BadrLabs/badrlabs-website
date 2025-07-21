@@ -1,152 +1,88 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-cream via-white to-cream">
-    <!-- Navigation -->
-    <nav
-      class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-cream z-50"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex items-center space-x-3">
-            <img src="/badrlabs-no-text.jpg" alt="BadrLabs" class="h-10 w-10" />
-            <span class="text-2xl font-bold text-charcoal">BadrLabs</span>
-          </div>
-          <div class="hidden md:flex space-x-8">
-            <a
-              href="#process"
-              class="text-charcoal hover:text-terracotta transition-colors"
-              >Process</a
-            >
-            <a
-              href="#tech"
-              class="text-charcoal hover:text-terracotta transition-colors"
-              >Tech Stack</a
-            >
-            <a
-              href="#team"
-              class="text-charcoal hover:text-terracotta transition-colors"
-              >Team</a
-            >
-            <a
-              href="#contact"
-              class="text-charcoal hover:text-terracotta transition-colors"
-              >Contact</a
-            >
-          </div>
-          <button class="md:hidden" @click="toggleMobileMenu">
-            <Menu class="h-6 w-6 text-charcoal" />
-          </button>
-        </div>
-      </div>
+  <div class="min-h-screen bg-gradient-to-br from-background via-white to-background">
 
-      <!-- Mobile Menu -->
-      <div
-        v-if="mobileMenuOpen"
-        class="md:hidden bg-white border-t border-cream"
-      >
-        <div class="px-4 py-2 space-y-2">
-          <a
-            href="#process"
-            class="block py-2 text-charcoal hover:text-terracotta"
-            >Process</a
-          >
-          <a href="#tech" class="block py-2 text-charcoal hover:text-terracotta"
-            >Tech Stack</a
-          >
-          <a href="#team" class="block py-2 text-charcoal hover:text-terracotta"
-            >Team</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-charcoal hover:text-terracotta"
-            >Contact</a
-          >
-        </div>
-      </div>
-    </nav>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center">
-          <div class="relative inline-block mb-8">
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-terracotta to-navy rounded-full blur-3xl opacity-20 scale-150"
-            />
-            <img
-              src="/badrlabs-no-text.jpg"
-              alt="BadrLabs"
-              class="relative h-24 w-24 mx-auto"
-            />
-          </div>
-          <h1 class="text-5xl md:text-7xl font-bold text-charcoal mb-6">
-            Crafting Digital
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-terracotta to-navy"
-            >
-              Excellence
-            </span>
-          </h1>
-          <p
-            class="text-xl md:text-2xl text-charcoal/70 mb-8 max-w-3xl mx-auto leading-relaxed"
+    <section id="hero" class="min-h-screen bg-background flex items-center justify-center 
+    px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+    <!-- <section id="hero" class="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="sand-particle" v-for="i in 300" :key="i" :style="{
+          left: Math.random() * 100 + '%',
+          top: Math.random() * 100 + '%',
+          animationDelay: Math.random() * 8 + 's',
+          animationDuration: (Math.random() * 4 + 2) + 's'
+        }"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10"> -->
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-secondary">
+          Clarity Through Code
+        </h1>
+        <p class="text-xl md:text-2xl text-secondary/70 mb-8 max-w-3xl mx-auto leading-relaxed">
+          From concept to deployment, we bring your vision to life with cutting-edge technology.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#contact"
+            class="bg-gradient-to-br from-accent to-accent-dark text-background px-8 py-4 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 inline-block shadow-xl border-2 border-accent-dark/30 backdrop-blur-sm hover:shadow-2xl relative overflow-hidden cursor-pointer"
+            @click.prevent="scrollToContact"
           >
-            We specialize in fullstack applications that transform businesses
-            across industries. From concept to deployment, we bring your vision
-            to life with cutting-edge technology.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              class="bg-gradient-to-r from-terracotta to-orange-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              Start Your Project
-            </button>
-            <button
-              class="border-2 border-navy text-navy px-8 py-4 rounded-full font-semibold hover:bg-navy hover:text-white transition-all duration-300"
-            >
-              View Our Work
-            </button>
-          </div>
+            
+            <span class="relative z-10">Get in touch</span>
+          </a>
+          <a
+            href="#work"
+            class="bg-gradient-to-br from-white/5 to-primary/55 text-background px-8 py-4 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 inline-block shadow-xl border-2 border-primary/30 backdrop-blur-sm hover:shadow-2xl relative overflow-hidden"
+            
+          >
+            <span class="relative z-10">View our Work</span>
+          </a>
         </div>
+        
+        <!-- Down Arrow -->
       </div>
     </section>
 
     <!-- Trusted Companies Banner -->
-    <section class="py-16 bg-white/50">
+    <section id="experience" class="py-16 bg-white/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-center text-charcoal/60 text-lg font-medium mb-12">
+        <h2 class="text-center text-secondary/60 text-lg font-medium mb-12">
           Trusted by industry leaders
         </h2>
         <div
           class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60"
         >
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">TechCorp</span>
+            <span class="text-gray-800 font-semibold">TechCorp</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">InnovateCo</span>
+            <span class="text-gray-800 font-semibold">InnovateCo</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">DataFlow</span>
+            <span class="text-gray-800 font-semibold">DataFlow</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">CloudTech</span>
+            <span class="text-gray-800 font-semibold">CloudTech</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">StartupX</span>
+            <span class="text-gray-800 font-semibold">StartupX</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">Enterprise</span>
+            <span class="text-gray-800 font-semibold">Enterprise</span>
           </div>
         </div>
       </div>
@@ -156,10 +92,10 @@
     <section id="process" class="py-20 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
             Our Process
           </h2>
-          <p class="text-xl text-charcoal/70 max-w-3xl mx-auto">
+          <p class="text-xl text-secondary/70 max-w-3xl mx-auto">
             A proven methodology that ensures your project's success from
             discovery to deployment
           </p>
@@ -168,15 +104,15 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="relative group">
             <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-background group-hover:border-terracotta/30"
             >
               <div
-                class="bg-gradient-to-br from-terracotta to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                class="bg-gradient-to-br from-terracotta to-accent-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Search class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Discovery</h3>
-              <p class="text-charcoal/70">
+              <h3 class="text-xl font-bold text-secondary mb-4">Discovery</h3>
+              <p class="text-secondary/70">
                 We dive deep into your business needs, goals, and challenges to
                 create a comprehensive project roadmap.
               </p>
@@ -185,15 +121,15 @@
 
           <div class="relative group">
             <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-background group-hover:border-terracotta/30"
             >
               <div
-                class="bg-gradient-to-br from-navy to-blue-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                class="bg-gradient-to-br from-primary to-primary w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Palette class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Design</h3>
-              <p class="text-charcoal/70">
+              <h3 class="text-xl font-bold text-secondary mb-4">Design</h3>
+              <p class="text-secondary/70">
                 Our design team creates intuitive, beautiful interfaces that
                 provide exceptional user experiences.
               </p>
@@ -202,15 +138,15 @@
 
           <div class="relative group">
             <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-background group-hover:border-terracotta/30"
             >
               <div
-                class="bg-gradient-to-br from-terracotta to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                class="bg-gradient-to-br from-terracotta to-accent-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Code class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Development</h3>
-              <p class="text-charcoal/70">
+              <h3 class="text-xl font-bold text-secondary mb-4">Development</h3>
+              <p class="text-secondary/70">
                 We build robust, scalable applications using the latest
                 technologies and best practices.
               </p>
@@ -219,15 +155,15 @@
 
           <div class="relative group">
             <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-background group-hover:border-terracotta/30"
             >
               <div
-                class="bg-gradient-to-br from-navy to-blue-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                class="bg-gradient-to-br from-primary to-primary w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
               >
                 <Rocket class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Launch</h3>
-              <p class="text-charcoal/70">
+              <h3 class="text-xl font-bold text-secondary mb-4">Launch</h3>
+              <p class="text-secondary/70">
                 We deploy your application and provide ongoing support to ensure
                 optimal performance.
               </p>
@@ -240,14 +176,14 @@
     <!-- Tech Stack Section -->
     <section
       id="tech"
-      class="py-20 bg-gradient-to-br from-navy/5 to-terracotta/5 px-4 sm:px-6 lg:px-8"
+      class="py-20 bg-gradient-to-br from-primary/5 to-terracotta/5 px-4 sm:px-6 lg:px-8"
     >
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
             Our Tech Stack
           </h2>
-          <p class="text-xl text-charcoal/70 max-w-3xl mx-auto">
+          <p class="text-xl text-secondary/70 max-w-3xl mx-auto">
             We use cutting-edge technologies to build fast, scalable, and
             maintainable applications
           </p>
@@ -260,12 +196,12 @@
             class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:scale-105"
           >
             <div
-              class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-terracotta/10 to-navy/10 rounded-xl flex items-center justify-center group-hover:from-terracotta/20 group-hover:to-navy/20 transition-all duration-300"
+              class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-terracotta/10 to-primary/10 rounded-xl flex items-center justify-center group-hover:from-terracotta/20 group-hover:to-primary/20 transition-all duration-300"
             >
-              <component :is="tech.icon" class="h-8 w-8 text-charcoal" />
+              <component :is="tech.icon" class="h-8 w-8 text-secondary" />
             </div>
-            <h3 class="font-semibold text-charcoal mb-2">{{ tech.name }}</h3>
-            <p class="text-sm text-charcoal/60">{{ tech.description }}</p>
+            <h3 class="font-semibold text-secondary mb-2">{{ tech.name }}</h3>
+            <p class="text-sm text-secondary/60">{{ tech.description }}</p>
           </div>
         </div>
       </div>
@@ -275,10 +211,10 @@
     <section id="team" class="py-20 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
             Meet the Team
           </h2>
-          <p class="text-xl text-charcoal/70 max-w-3xl mx-auto">
+          <p class="text-xl text-secondary/70 max-w-3xl mx-auto">
             The talented individuals behind BadrLabs who bring your ideas to
             life
           </p>
@@ -287,25 +223,25 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div v-for="member in teamMembers" :key="member.name" class="group">
             <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-cream group-hover:border-terracotta/30"
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-background group-hover:border-terracotta/30"
             >
               <div class="relative mb-6">
                 <div
-                  class="w-24 h-24 mx-auto bg-gradient-to-br from-terracotta/20 to-navy/20 rounded-full flex items-center justify-center group-hover:from-terracotta/30 group-hover:to-navy/30 transition-all duration-300"
+                  class="w-24 h-24 mx-auto bg-gradient-to-br from-terracotta/20 to-primary/20 rounded-full flex items-center justify-center group-hover:from-terracotta/30 group-hover:to-primary/30 transition-all duration-300"
                 >
-                  <User class="h-12 w-12 text-charcoal" />
+                  <User class="h-12 w-12 text-secondary" />
                 </div>
                 <div
-                  class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-terracotta to-orange-600 rounded-full flex items-center justify-center"
+                  class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-terracotta to-accent-600 rounded-full flex items-center justify-center"
                 >
                   <component :is="member.icon" class="h-4 w-4 text-white" />
                 </div>
               </div>
-              <h3 class="text-xl font-bold text-charcoal mb-2">
+              <h3 class="text-xl font-bold text-secondary mb-2">
                 {{ member.name }}
               </h3>
               <p class="text-terracotta font-medium mb-3">{{ member.role }}</p>
-              <p class="text-charcoal/70 text-sm">{{ member.description }}</p>
+              <p class="text-secondary/70 text-sm">{{ member.description }}</p>
             </div>
           </div>
         </div>
@@ -315,55 +251,37 @@
     <!-- Contact CTA Section -->
     <section
       id="contact"
-      class="py-20 bg-gradient-to-br from-navy to-blue-900 px-4 sm:px-6 lg:px-8"
+      class="py-20 bg-gradient-to-br from-primary to-primary px-4 sm:px-6 lg:px-8"
     >
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
           Ready to Start Your Project?
         </h2>
-        <p class="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-          Let's discuss how we can help transform your business with a custom
-          fullstack application
+        <p class="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
+          Contact us to discuss how we can help transform your business with a custom fullstack application
         </p>
 
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8">
-          <div class="grid md:grid-cols-3 gap-6 text-white">
+        <div class="bg-gradient-to-br from-white/25 to-white/5 backdrop-blur-md rounded-2xl p-8 mb-8 inline-block border-2 border-white/30 shadow-2xl hover:shadow-3xl relative overflow-hidden">
+          <div class="flex flex-col md:flex-row gap-6 text-white justify-center items-center relative z-10">
             <div class="flex items-center justify-center space-x-3">
-              <Mail class="h-6 w-6 text-terracotta" />
-              <span>hello@badrlabs.com</span>
+              <Mail class="h-6 w-6 text-accent-dark" />
+              <span class="text-background">hello@badrlabs.com</span>
             </div>
             <div class="flex items-center justify-center space-x-3">
-              <Phone class="h-6 w-6 text-terracotta" />
-              <span>+1 (226) 123-4567</span>
-            </div>
-            <div class="flex items-center justify-center space-x-3">
-              <MapPin class="h-6 w-6 text-terracotta" />
-              <span>Waterloo, ON</span>
+              <Linkedin class="h-6 w-6 text-accent-dark" />
+              <span class="text-background">BadrLabs</span>
             </div>
           </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            class="bg-gradient-to-r from-terracotta to-orange-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
-            Get Free Consultation
-          </button>
-          <button
-            class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-navy transition-all duration-300"
-          >
-            View Portfolio
-          </button>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-cream text-black py-12 px-4 sm:px-6 lg:px-8">
+    <footer class="bg-background text-black py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="flex items-center space-x-3 mb-4 md:mb-0">
-            <img src="/badrlabs-no-text.jpg" alt="BadrLabs" class="h-8 w-8" />
+            <img src="/badrlabs-no-text.jpg" alt="BadrLabs" class="h-8 w-8">
             <span class="text-xl font-bold">BadrLabs</span>
           </div>
           <div class="flex space-x-6">
@@ -374,7 +292,7 @@
               <Linkedin class="h-6 w-6" />
             </a>
             <a href="#" class="hover:text-terracotta transition-colors">
-              <Twitter class="h-6 w-6" />
+              <Twitter2 class="h-6 w-6" />
             </a>
           </div>
         </div>
@@ -390,31 +308,21 @@
 </template>
 
 <script setup type="ts">
-import { ref } from 'vue'
+
 import {
-  Menu,
   Search,
   Palette,
   Code,
   Rocket,
   User,
   Mail,
-  Phone,
-  MapPin,
   Github,
   Linkedin,
-  Twitter,
   Layers,
   Database,
   Smartphone,
-  Globe
+  Globe,
 } from 'lucide-vue-next'
-
-const mobileMenuOpen = ref(false)
-
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-}
 
 const techStack = [
   { name: 'React', icon: 'div', description: 'Modern UI library' },
@@ -457,4 +365,14 @@ const teamMembers = [
     icon: Rocket
   }
 ]
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact')
+  if (contactSection) {
+    contactSection.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
 </script>
