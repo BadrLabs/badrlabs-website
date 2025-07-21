@@ -3,33 +3,50 @@
 
 
     <!-- Hero Section -->
-    <section class="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section id="hero" class="min-h-screen bg-background flex items-center justify-center 
+    px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
+    <!-- <section id="hero" class="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="sand-particle" v-for="i in 300" :key="i" :style="{
+          left: Math.random() * 100 + '%',
+          top: Math.random() * 100 + '%',
+          animationDelay: Math.random() * 8 + 's',
+          animationDuration: (Math.random() * 4 + 2) + 's'
+        }"></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10"> -->
         <h1 class="text-5xl md:text-7xl font-bold mb-6 text-secondary">
           Clarity Through Code
         </h1>
         <p class="text-xl md:text-2xl text-secondary/70 mb-8 max-w-3xl mx-auto leading-relaxed">
-          We design, build, and deploy custom software — fast, clean, focused.
+          From concept to deployment, we bring your vision to life with cutting-edge technology.
         </p>
-        <a
-          href="#contact"
-          class="mt-8 bg-gradient-to-br from-accent via-accent to-accent-dark text-white px-8 py-4 rounded-full font-semibold hover:from-accent-dark hover:via-accent-dark hover:to-accent transform hover:scale-105 transition-all duration-300 inline-block shadow-xl border-2 border-accent-dark/30 backdrop-blur-sm hover:shadow-2xl hover:border-accent-dark/50 relative overflow-hidden"
-        >
-          <div class="absolute inset-0 bg-gradient-to-t from-accent-dark/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-          <span class="relative z-10">Start a project</span>
-        </a>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#contact"
+            class="bg-gradient-to-br from-accent to-accent-dark text-background px-8 py-4 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 inline-block shadow-xl border-2 border-accent-dark/30 backdrop-blur-sm hover:shadow-2xl relative overflow-hidden cursor-pointer"
+            @click.prevent="scrollToContact"
+          >
+            
+            <span class="relative z-10">Get in touch</span>
+          </a>
+          <a
+            href="#work"
+            class="bg-gradient-to-br from-white/5 to-primary/55 text-background px-8 py-4 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 inline-block shadow-xl border-2 border-primary/30 backdrop-blur-sm hover:shadow-2xl relative overflow-hidden"
+            
+          >
+            <span class="relative z-10">View our Work</span>
+          </a>
+        </div>
         
         <!-- Down Arrow -->
-        <div class="mt-16 flex justify-center">
-          <div class="text-secondary animate-bounce">
-            <ChevronDown class="h-8 w-8" />
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Trusted Companies Banner -->
-    <section class="py-16 bg-white/50">
+    <section id="experience" class="py-16 bg-white/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-center text-secondary/60 text-lg font-medium mb-12">
           Trusted by industry leaders
@@ -38,34 +55,34 @@
           class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60"
         >
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">TechCorp</span>
+            <span class="text-gray-800 font-semibold">TechCorp</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">InnovateCo</span>
+            <span class="text-gray-800 font-semibold">InnovateCo</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">DataFlow</span>
+            <span class="text-gray-800 font-semibold">DataFlow</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">CloudTech</span>
+            <span class="text-gray-800 font-semibold">CloudTech</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">StartupX</span>
+            <span class="text-gray-800 font-semibold">StartupX</span>
           </div>
           <div
-            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
+            class="bg-gradient-to-br from-primary-light/70 to-white/5 h-16 rounded-lg flex items-center justify-center border border-primary-light/100"
           >
-            <span class="text-gray-500 font-semibold">Enterprise</span>
+            <span class="text-gray-800 font-semibold">Enterprise</span>
           </div>
         </div>
       </div>
@@ -240,39 +257,21 @@
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
           Ready to Start Your Project?
         </h2>
-        <p class="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-          Let's discuss how we can help transform your business with a custom
-          fullstack application
+        <p class="text-xl text-background/80 mb-8 max-w-2xl mx-auto">
+          Contact us to discuss how we can help transform your business with a custom fullstack application
         </p>
 
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8">
-          <div class="grid md:grid-cols-3 gap-6 text-white">
+        <div class="bg-gradient-to-br from-white/25 to-white/5 backdrop-blur-md rounded-2xl p-8 mb-8 inline-block border-2 border-white/30 shadow-2xl hover:shadow-3xl relative overflow-hidden">
+          <div class="flex flex-col md:flex-row gap-6 text-white justify-center items-center relative z-10">
             <div class="flex items-center justify-center space-x-3">
-              <Mail class="h-6 w-6 text-terracotta" />
-              <span>hello@badrlabs.com</span>
+              <Mail class="h-6 w-6 text-accent-dark" />
+              <span class="text-background">hello@badrlabs.com</span>
             </div>
             <div class="flex items-center justify-center space-x-3">
-              <Phone class="h-6 w-6 text-terracotta" />
-              <span>+1 (226) 123-4567</span>
-            </div>
-            <div class="flex items-center justify-center space-x-3">
-              <MapPin class="h-6 w-6 text-terracotta" />
-              <span>Waterloo, ON</span>
+              <Linkedin class="h-6 w-6 text-accent-dark" />
+              <span class="text-background">BadrLabs</span>
             </div>
           </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            class="bg-gradient-to-r from-terracotta to-accent-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
-            Get Free Consultation
-          </button>
-          <button
-            class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300"
-          >
-            View Portfolio
-          </button>
         </div>
       </div>
     </section>
@@ -282,7 +281,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="flex items-center space-x-3 mb-4 md:mb-0">
-            <img src="/badrlabs-no-text.jpg" alt="BadrLabs" class="h-8 w-8" />
+            <img src="/badrlabs-no-text.jpg" alt="BadrLabs" class="h-8 w-8">
             <span class="text-xl font-bold">BadrLabs</span>
           </div>
           <div class="flex space-x-6">
@@ -293,7 +292,7 @@
               <Linkedin class="h-6 w-6" />
             </a>
             <a href="#" class="hover:text-terracotta transition-colors">
-              <Twitter class="h-6 w-6" />
+              <Twitter2 class="h-6 w-6" />
             </a>
           </div>
         </div>
@@ -317,16 +316,12 @@ import {
   Rocket,
   User,
   Mail,
-  Phone,
-  MapPin,
   Github,
   Linkedin,
-  Twitter,
   Layers,
   Database,
   Smartphone,
   Globe,
-  ChevronDown
 } from 'lucide-vue-next'
 
 const techStack = [
@@ -370,4 +365,14 @@ const teamMembers = [
     icon: Rocket
   }
 ]
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact')
+  if (contactSection) {
+    contactSection.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
 </script>
