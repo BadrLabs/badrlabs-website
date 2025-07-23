@@ -167,71 +167,35 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="relative group">
-            <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
-            >
-              <div
-                class="bg-gradient-to-br from-terracotta to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
-              >
-                <Search class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Discovery</h3>
-              <p class="text-charcoal/70">
-                We dive deep into your business needs, goals, and challenges to
-                create a comprehensive project roadmap.
-              </p>
-            </div>
+            <FeatureSectionCard
+              title="Discovery"
+              text="We dive deep into your business needs, goals, and challenges to create a comprehensive project roadmap."
+              :icon="Search"
+            />
           </div>
 
           <div class="relative group">
-            <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
-            >
-              <div
-                class="bg-gradient-to-br from-navy to-blue-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
-              >
-                <Palette class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Design</h3>
-              <p class="text-charcoal/70">
-                Our design team creates intuitive, beautiful interfaces that
-                provide exceptional user experiences.
-              </p>
-            </div>
+            <FeatureSectionCard
+              title="Design"
+              text="Our design team creates intuitive, beautiful interfaces that provide exceptional user experiences."
+              :icon="Palette"
+            />
           </div>
 
           <div class="relative group">
-            <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
-            >
-              <div
-                class="bg-gradient-to-br from-terracotta to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
-              >
-                <Code class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Development</h3>
-              <p class="text-charcoal/70">
-                We build robust, scalable applications using the latest
-                technologies and best practices.
-              </p>
-            </div>
+            <FeatureSectionCard
+              title="Development"
+              text="We build robust, scalable applications using the latest technologies and best practices."
+              :icon="Code"
+            />
           </div>
 
           <div class="relative group">
-            <div
-              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-cream group-hover:border-terracotta/30"
-            >
-              <div
-                class="bg-gradient-to-br from-navy to-blue-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
-              >
-                <Rocket class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-charcoal mb-4">Launch</h3>
-              <p class="text-charcoal/70">
-                We deploy your application and provide ongoing support to ensure
-                optimal performance.
-              </p>
-            </div>
+            <FeatureSectionCard
+              title="Launch"
+              text="We deploy your application and provide ongoing support to ensure optimal performance."
+              :icon="Rocket"
+            />
           </div>
         </div>
       </div>
@@ -409,6 +373,8 @@ import {
   Smartphone,
   Globe
 } from 'lucide-vue-next'
+
+import { FeatureSectionCard } from '#components'
 
 const mobileMenuOpen = ref(false)
 

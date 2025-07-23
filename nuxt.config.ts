@@ -9,5 +9,11 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/css/main.css"],
 
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxt/image"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "@nuxt/image",
+    "shadcn-nuxt",
+  ],
 });
