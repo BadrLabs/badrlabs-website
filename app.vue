@@ -1,5 +1,9 @@
+<script setup lang="ts">
+const template = "default";
+</script>
+
 <template>
-  <div>
+  <NuxtLayout :name="template">
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
