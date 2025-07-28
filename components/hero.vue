@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-blue-50 w-full">
+  <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-blue-50 w-full overflow-hidden">
     <!-- Background decorative elements - simplified for mobile -->
     <div class="hidden md:block absolute inset-0 pointer-events-none">
       <div class="absolute -top-40 -right-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
