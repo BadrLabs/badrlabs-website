@@ -37,10 +37,10 @@
           </div>
 
           <!-- Stats overlay -->
-          <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl">
+          <div class="absolute -bottom-8 -right-1 md:-right-8 bg-white p-4 md:p-6 rounded-2xl shadow-xl">
             <div class="text-center">
-              <div class="text-3xl font-bold text-orange-600">15+</div>
-              <div class="text-sm text-gray-600">Years of Experience</div>
+              <div class="text-2xl md:text-3xl font-bold text-orange-600">15+</div>
+              <div class="text-xs md:text-sm text-gray-600">Years of Experience</div>
             </div>
           </div>
         </div>
