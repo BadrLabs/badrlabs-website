@@ -17,7 +17,7 @@
 
         <!-- Subtitle -->
         <p class="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300 w-full px-2 sm:px-0">
-          Elevate your brand with BadrLabs, where creativity knows no bounds. We specialize in crafting experiences that leave a lasting impression. Let's turn your vision into reality.
+          At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream.​ Let's turn your vision into reality.
         </p>
 
         <!-- CTA Buttons -->

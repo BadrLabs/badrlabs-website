@@ -104,8 +104,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
             </svg>
           </div>
-          <h4 class="text-lg font-semibold text-gray-900 mb-3">Innovation First</h4>
-          <p class="text-gray-600">We stay ahead of the curve with cutting-edge technologies and creative solutions that set your brand apart.</p>
+          <h4 class="text-lg font-semibold text-gray-900 mb-3">Cross-domain Experience</h4>
+          <p class="text-gray-600">From healthcare to energy to cybersecurity to manufacturing to construction — we connect the dots between industries and technologies.​</p>
         </div>
 
         <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 transition-all duration-300 hover:scale-105 group">
@@ -114,8 +114,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
             </svg>
           </div>
-          <h4 class="text-lg font-semibold text-gray-900 mb-3">Collaborative Spirit</h4>
-          <p class="text-gray-600">We believe the best results come from working together, both within our team and with our clients.</p>
+          <h4 class="text-lg font-semibold text-gray-900 mb-3">An Experienced Team From Day 1​</h4>
+          <p class="text-gray-600">No handoffs, no juniors — every project is led by seasoned professionals.​​</p>
         </div>
 
         <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 transition-all duration-300 hover:scale-105 group">
@@ -125,7 +125,7 @@
             </svg>
           </div>
           <h4 class="text-lg font-semibold text-gray-900 mb-3">Quality Driven</h4>
-          <p class="text-gray-600">Every project we undertake is crafted with meticulous attention to detail and a commitment to excellence.</p>
+          <p class="text-gray-600">We move fast without cutting corners — built right, the first time while taking account of our clients’ deepest needs and feedback.</p>
         </div>
       </div>
     </div>
