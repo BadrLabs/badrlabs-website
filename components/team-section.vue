@@ -138,13 +138,13 @@ const teamMembers = [
   },
   {
     name: 'Tamim Faruk',
-    role: 'Lead Developer',
-    bio: 'Full-stack developer with expertise in modern web technologies. Loves turning complex problems into elegant solutions.',
+    role: 'Data Engineer and Scientist',
+    bio: 'Data engineer and scientist working on Agentic AI systems, with a background in Mechatronics Engineering (BASc.) and Biomedical Engineering (MASc.)',
     avatar: '👨‍💻',
-    skills: ['React', 'Vue.js', 'Node.js', 'Python'],
-    linkedin: '#',
+    skills: ['Python', 'Pytorch', 'Pydantic', 'Langchain', 'Databricks', 'Snowflake'],
+    linkedin: 'https://www.linkedin.com/in/tamim-f-90290870/',
     twitter: null,
-    github: '#'
+    github: 'https://github.com/7amim'
   },
   {
     name: 'Omar Irfan',
