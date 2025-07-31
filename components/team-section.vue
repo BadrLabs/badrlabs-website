@@ -18,10 +18,18 @@
           :key="index"
           class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
         >
-          <!-- Team Member Image Placeholder -->
+          <!-- Team Member Image -->
           <div class="aspect-square bg-gradient-to-br from-orange-100 to-blue-100 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
+            
+            <!-- Show image if avatar is a filename, otherwise show emoji -->
+            <img 
+              v-if="member.avatar && member.avatar.includes('.')" 
+              :src="`/${member.avatar}`" 
+              :alt="`${member.name} profile photo`"
+              class="w-full h-full object-cover"
+            />
+            <div v-else class="absolute inset-0 flex items-center justify-center">
               <div class="text-6xl opacity-30 group-hover:opacity-50 transition-opacity duration-300">
                 {{ member.avatar }}
               </div>
@@ -130,7 +138,7 @@ const teamMembers = [
     name: 'Harun Sheikhali',
     role: 'Full Stack Developer',
     bio: 'Full Stack Developer with a passion for building web applications with a focus on user experience and performance. 8+ years in web development.',
-    avatar: '👩‍🎨',
+    avatar: 'headshots/harun_headshot.png',
     skills: ['React', 'Vue.js', 'Node.js', 'Next.js', 'Tailwind CSS', 'TypeScript'],
     linkedin: '#',
     twitter: '#',
@@ -140,7 +148,7 @@ const teamMembers = [
     name: 'Tamim Faruk',
     role: 'Data Engineer and Scientist',
     bio: 'Data engineer and scientist working on Agentic AI systems, with a background in Mechatronics Engineering (BASc.) and Biomedical Engineering (MASc.)',
-    avatar: '👨‍💻',
+    avatar: 'headshots/tamim_headshot.jpeg',
     skills: ['Python', 'Pytorch', 'Pydantic', 'Langchain', 'Databricks', 'Snowflake'],
     linkedin: 'https://www.linkedin.com/in/tamim-f-90290870/',
     twitter: null,
@@ -148,9 +156,9 @@ const teamMembers = [
   },
   {
     name: 'Omar Irfan',
-    role: 'UX/UI Designer',
+    role: 'Full Stack Developer',
     bio: 'User-centered designer focused on creating intuitive and beautiful interfaces that users love to interact with.',
-    avatar: '👩‍🎨',
+    avatar: 'headshots/omar_headshot.jpeg',
     skills: ['Figma', 'Prototyping', 'User Research', 'Design Systems'],
     linkedin: '#',
     twitter: '#',
@@ -158,9 +166,9 @@ const teamMembers = [
   },
   {
     name: 'Istiaq Ullah',
-    role: 'Marketing Strategist',
+    role: 'Backend Engineer',
     bio: 'Digital marketing expert who helps brands grow their online presence and connect with their target audience effectively.',
-    avatar: '👨‍💼',
+    avatar: 'headshots/istiaq_headshot.jpeg',
     skills: ['SEO', 'Content Strategy', 'Analytics', 'Growth Hacking'],
     linkedin: '#',
     twitter: '#',
