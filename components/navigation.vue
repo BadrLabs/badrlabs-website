@@ -4,8 +4,8 @@
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <NuxtLink to="/" class="text-2xl font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
-            BadrLabs.
+          <NuxtLink to="/" class="flex items-center text-2xl font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
+            <img src="/badrlabs-no-text.png" alt="BadrLabs Logo" class="h-10 w-auto" /> BadrLabs.
           </NuxtLink>
         </div>
 
@@ -26,7 +26,7 @@
         <!-- CTA Button -->
         <div class="hidden md:block">
           <button class="bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-            let's collaborate
+            Let's Collaborate
           </button>
         </div>
 

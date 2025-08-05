@@ -14,7 +14,6 @@
       <!-- Process Steps -->
       <div class="relative">
         <!-- Connection Line -->
-        <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-200 via-orange-400 to-orange-200 transform -translate-y-1/2 z-0"></div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
           <div 
@@ -45,10 +44,6 @@
                 </div>
               </div>
 
-              <!-- Duration Badge -->
-              <div class="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium group-hover:bg-orange-100 group-hover:text-orange-600 transition-all duration-300">
-                {{ step.duration }}
-              </div>
             </div>
 
             <!-- Hover Effect -->
