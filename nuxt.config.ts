@@ -19,7 +19,6 @@ export default defineNuxtConfig({
      */
     componentDir: "./components/ui",
   },
-
   modules: [
     "@nuxt/eslint",
     "@nuxt/fonts",
@@ -28,3 +27,4 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
   ],
 });
+
