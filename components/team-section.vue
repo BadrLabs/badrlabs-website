@@ -160,9 +160,8 @@ const teamMembers = [
     bio: 'Full Stack Developer with 5 years of experience building fast, accessible web applications that align with real business needs. Specializes in crafting polished, intuitive user experiences.',
     avatar: 'headshots/omar_headshot.png',
     skills: ['React', 'Svelte', 'Next.js', 'Material UI', 'Tailwind CSS', 'TypeScript'],
-    linkedin: '#',
-    twitter: '#',
-    github: null
+    linkedin: 'https://www.linkedin.com/in/omarirfan/',
+    github: 'https://github.com/Omar-Irfan'
   },
   {
     name: 'Istiaq Ullah',

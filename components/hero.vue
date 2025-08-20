@@ -48,19 +48,7 @@
 </template>
 
 <script setup lang="ts">
-const scrollToContact = () => {
-  const contactSection = document.getElementById('contact-section')
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: 'smooth' })
-  }
-}
-
-const scrollToAbout = () => {
-  const aboutSection = document.getElementById('about-section')
-  if (aboutSection) {
-    aboutSection.scrollIntoView({ behavior: 'smooth' })
-  }
-}
+import { scrollToContact, scrollToAbout } from '~/lib/utils';
 </script>
 
 <style scoped>
