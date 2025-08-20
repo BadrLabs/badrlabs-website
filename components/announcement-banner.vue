@@ -1,31 +1,27 @@
 <template>
   <div
     class="w-full z-50 bg-gradient-to-r from-orange-600 via-red-500 to-pink-500 
-           text-white text-center text-base sm:text-lg font-black 
+           text-white text-center text-base sm:text-lg font-extrabold 
            py-4 px-6 shadow-md"
   >
     <div class="inline-flex items-center flex-nowrap">
       <!-- Mobile: Clickable short text -->
-      <button 
-        @click="scrollToContact"
+      <a 
+        href="#contact-section" 
         class="inline whitespace-nowrap sm:hidden transition-colors duration-300 hover:text-yellow-200"
       >
-        Prototype your ideas! Starting at $5K!
-    </button>
+        Concept to Prototype starting at $5K!
+      </a>
       <!-- Desktop: Full text and separate link -->
       <span class="hidden whitespace-nowrap sm:inline">
-        Turn concepts into prototypes in as little as 2 months! Starting from just $5K.
+        From Concept to Prototype: Starting at $5K, delivered in just 2 months!
       </span>
-      <button 
-        @click="scrollToContact" 
+      <a 
+        href="#contact-section" 
         class="hidden whitespace-nowrap underline ml-2 sm:inline transition-colors duration-300 hover:text-yellow-200"
       >
         Find Out More!
-    </button>
+      </a>
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { scrollToContact } from '~/lib/utils';
-</script>

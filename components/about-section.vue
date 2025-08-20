@@ -10,6 +10,9 @@
           <p class="text-xl text-gray-600 leading-relaxed">
             We are storytellers, weaving narratives that resonate. Our mission is to bring your ideas to life and make them shine in the digital landscape. With a blend of creativity, strategy, and technical expertise, we are committed to exceeding your expectations.
           </p>
+          <button class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Learn More About Us
+          </button>
         </div>
         <!-- Visual Element -->
         <div class="relative">
