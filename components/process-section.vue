@@ -94,7 +94,7 @@
           <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
             Let's discuss how our proven process can bring your ideas to life and create something extraordinary together.
           </p>
-          <button class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <button  @click="scrollToContact" class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Start Your Project
           </button>
         </div>
@@ -104,6 +104,7 @@
 </template>
 
 <script setup lang="ts">
+import { scrollToContact } from '~/lib/utils';
 const processSteps = [
   {
     number: '01',

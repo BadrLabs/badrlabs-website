@@ -75,9 +75,9 @@
               >
                 <option value="">Select a project type</option>
                 <option value="website">Website Design & Development</option>
-                <option value="branding">Brand Identity & Design</option>
                 <option value="mobile">Mobile App Development</option>
                 <option value="ecommerce">E-commerce Solution</option>
+                <option value="prototype">Rapid Prototyping</option>
                 <option value="consulting">Digital Strategy Consulting</option>
                 <option value="other">Other</option>
               </select>
@@ -148,7 +148,7 @@
                 </div>
               </div>
 
-              <div class="flex items-start space-x-4">
+              <!-- <div class="flex items-start space-x-4">
                 <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
@@ -159,7 +159,7 @@
                   <p class="text-gray-600">+1 (555) 123-4567</p>
                   <p class="text-sm text-gray-500">Mon-Fri, 9AM-6PM EST</p>
                 </div>
-              </div>
+              </div> -->
 
               <div class="flex items-start space-x-4">
                 <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">

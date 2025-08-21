@@ -5,13 +5,13 @@
         <!-- Content -->
         <div class="space-y-8">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            At BadrLabs, we crafting stories and defining brands
+            At BadrLabs, we are crafting stories and defining brands
           </h2>
           <p class="text-xl text-gray-600 leading-relaxed">
             We are storytellers, weaving narratives that resonate. Our mission is to bring your ideas to life and make them shine in the digital landscape. With a blend of creativity, strategy, and technical expertise, we are committed to exceeding your expectations.
           </p>
-          <button class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            learn more about us
+          <button @click="scrollToTeam" class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Meet the Team
           </button>
         </div>
 
@@ -74,8 +74,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4">Brand Strategy</h3>
-          <p class="text-gray-600">Developing comprehensive brand strategies that position your business for success.</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Digital Strategy Consulting</h3>
+          <p class="text-gray-600">Empowering companies and individuals to navigate today’s complex technology landscape.</p>
         </div>
       </div>
     </div>
@@ -83,6 +83,7 @@
 </template>
 
 <script setup lang="ts">
+import { scrollToTeam } from '~/lib/utils';
 // Component logic here if needed
 </script>
 
