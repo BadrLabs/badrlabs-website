@@ -5,7 +5,7 @@
         <!-- Logo -->
         <div class="flex-shrink-0">
           <NuxtLink to="/" class="flex items-center text-2xl font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
-            <img src="/badrlabs-no-text.png" alt="BadrLabs Logo" class="h-10 w-auto" /> BadrLabs.
+            <img src="/badrlabs-no-text.png" alt="BadrLabs Logo" class="h-10 w-auto" /> BadrLabs
           </NuxtLink>
         </div>
 
