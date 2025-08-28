@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   nitro: {
-    preset: "node-server", // or appropriate for your host
+    preset: "node-server",
   },
   vite: {
     plugins: [tailwindcss()],
