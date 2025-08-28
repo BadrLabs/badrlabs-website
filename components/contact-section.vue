@@ -394,7 +394,7 @@ const handleSubmit = async () => {
 
   // This api will send two emails. One to us from the client with details about what they want
   // Another email to the client indicating that we will respond in 24 hours
-  const response = await useFetch<{ success: boolean }>("/api/contact", {
+  const response = await $fetch<{ success: boolean }>("/api/contact", {
     method: "POST",
     body: {
       firstName: form.value.firstName,
@@ -407,10 +407,10 @@ const handleSubmit = async () => {
     },
   });
 
-  if (response.data?.value?.success) {
+  if (response.success) {
     showDialog.value = true;
   } else {
-    alert("Something went wrong. Please try again.");
+    console.log("Something went wrong. Please try again.");
   }
 
   // Reset form
