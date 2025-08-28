@@ -394,9 +394,13 @@ const handleSubmit = async () => {
 
   // This api will send two emails. One to us from the client with details about what they want
   // Another email to the client indicating that we will respond in 24 hours
-  const response = await $fetch<{ success: boolean }>("/api/contact", {
+  const response = await $fetch<{ success: boolean }>("https://formcarry.com/s/owmoAOb-wqm", {
     method: "POST",
-    body: {
+    headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
       firstName: form.value.firstName,
       lastName: form.value.lastName,
       email: form.value.email,
@@ -404,7 +408,7 @@ const handleSubmit = async () => {
       projectType: form.value.projectType,
       budget: form.value.budget,
       message: form.value.message,
-    },
+    }),
   });
 
   if (response.success) {
