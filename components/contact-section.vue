@@ -91,8 +91,8 @@
                 >Project Type</label
               >
               <select
-                v-model="form.projectType"
                 id="projectType"
+                v-model="form.projectType"
                 required
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
               >
@@ -392,15 +392,9 @@ const form = ref({
 const handleSubmit = async () => {
   isSubmitting.value = true;
 
-  // Simulate form submission
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-
-  // Here you would typically send the form data to your backend
-  console.log("Form submitted:", form.value);
-
   // This api will send two emails. One to us from the client with details about what they want
   // Another email to the client indicating that we will respond in 24 hours
-  await $fetch("/api/contact", {
+  const response = await useFetch<{ success: boolean }>("/api/contact", {
     method: "POST",
     body: {
       firstName: form.value.firstName,
@@ -412,6 +406,10 @@ const handleSubmit = async () => {
       message: form.value.message,
     },
   });
+
+  if (response.data?.value?.success) {
+    showDialog.value = true;
+  }
 
   // Reset form
   form.value = {
@@ -425,8 +423,5 @@ const handleSubmit = async () => {
   };
 
   isSubmitting.value = false;
-
-  // Show dialog after successfully sending emails
-  showDialog.value = true;
 };
 </script>
