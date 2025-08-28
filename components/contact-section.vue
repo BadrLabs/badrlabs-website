@@ -409,6 +409,8 @@ const handleSubmit = async () => {
 
   if (response.data?.value?.success) {
     showDialog.value = true;
+  } else {
+    alert("Something went wrong. Please try again.");
   }
 
   // Reset form
