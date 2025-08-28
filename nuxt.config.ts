@@ -4,6 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
+  nitro: {
+    preset: "node-server",
+  },
   vite: {
     plugins: [tailwindcss()],
   },
@@ -27,4 +30,3 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
   ],
 });
-
