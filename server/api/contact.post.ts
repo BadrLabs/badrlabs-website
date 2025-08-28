@@ -3,13 +3,21 @@ import nodemailer from "nodemailer";
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
+  const NODE_ENV = process.env.NODE_ENV;
+
   const transporter = nodemailer.createTransport({
     host: "mail.privateemail.com",
     port: 587,
     secure: false,
     auth: {
-      user: process.env.PRIVATE_EMAIL_USER,
-      pass: process.env.PRIVATE_EMAIL_PASSWORD,
+      user:
+        NODE_ENV === "development"
+          ? "harun@badrlabs.com"
+          : process.env.PRIVATE_EMAIL_USER,
+      pass:
+        NODE_ENV === "development"
+          ? "harun-pwd-123"
+          : process.env.PRIVATE_EMAIL_PASSWORD,
     },
   });
 
