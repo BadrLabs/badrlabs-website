@@ -165,10 +165,10 @@ const teamMembers = [
   },
   {
     name: 'Istiaq Ullah',
-    role: 'Backend Engineer',
-    bio: 'Digital marketing expert who helps brands grow their online presence and connect with their target audience effectively.',
+    role: 'Backend and Cloud Engineer',
+    bio: 'Backend and Cloud Engineer with 5+ years of experience building high-performance API services, cloud infrastructure, and data pipelines. Focused on scalable, reliable, and seamless digital experiences.',
     avatar: 'headshots/istiaq_headshot.png',
-    skills: ['SEO', 'Content Strategy', 'Analytics', 'Growth Hacking'],
+    skills: ['Node.js', 'Typescript', 'Kafka', 'Elasticsearch', 'Grafana','Kubernetes'],
     linkedin: '#',
     twitter: '#',
     github: null
