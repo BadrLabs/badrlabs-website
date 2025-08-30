@@ -1,6 +1,14 @@
-import { type ClassValue, clsx } from 'clsx'
+import { clsx } from 'clsx'
+import type {ClassValue} from 'clsx';
 import { twMerge } from 'tailwind-merge'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+
+export const scrollToContact = () => {
+  const contactSection = document.getElementById('contact-section')
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' })
+  }
+};

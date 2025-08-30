@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navigation />
+    <AccouncementBanner />
     <Hero />
     <ProcessSection />
     <AboutSection />
@@ -13,6 +14,7 @@
 
 <script setup lang="ts">
 import Navigation from '@/components/navigation.vue';
+import AccouncementBanner from '~/components/accouncement-banner.vue';
 import Hero from '@/components/hero.vue';
 import ProcessSection from '@/components/process-section.vue';
 import AboutSection from '@/components/about-section.vue';
