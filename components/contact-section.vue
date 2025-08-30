@@ -19,7 +19,7 @@
             Send us a message
           </h3>
 
-          <form @submit.prevent="handleSubmit" class="space-y-6">
+          <form class="space-y-6" @submit.prevent="handleSubmit">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -28,13 +28,13 @@
                   >First Name</label
                 >
                 <input
+                  id="firstName"
                   v-model="form.firstName"
                   type="text"
-                  id="firstName"
                   required
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
                   placeholder="Your first name"
-                />
+                >
               </div>
               <div>
                 <label
@@ -43,13 +43,13 @@
                   >Last Name</label
                 >
                 <input
+                  id="lastName"
                   v-model="form.lastName"
                   type="text"
-                  id="lastName"
                   required
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
                   placeholder="Your last name"
-                />
+                >
               </div>
             </div>
 
@@ -60,13 +60,13 @@
                 >Email Address</label
               >
               <input
+                id="email"
                 v-model="form.email"
                 type="email"
-                id="email"
                 required
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
                 placeholder="your.email@example.com"
-              />
+              >
             </div>
 
             <div>
@@ -76,12 +76,12 @@
                 >Company (Optional)</label
               >
               <input
+                id="company"
                 v-model="form.company"
                 type="text"
-                id="company"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
                 placeholder="Your company name"
-              />
+              >
             </div>
 
             <div>
@@ -113,8 +113,8 @@
                 >Budget Range</label
               >
               <select
-                v-model="form.budget"
                 id="budget"
+                v-model="form.budget"
                 required
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
               >
@@ -134,13 +134,13 @@
                 >Project Details</label
               >
               <textarea
-                v-model="form.message"
                 id="message"
+                v-model="form.message"
                 rows="6"
                 required
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 resize-none"
                 placeholder="Tell us about your project, goals, and any specific requirements..."
-              ></textarea>
+              />
             </div>
 
             <button
@@ -165,12 +165,12 @@
                     r="10"
                     stroke="currentColor"
                     stroke-width="4"
-                  ></circle>
+                  />
                   <path
                     class="opacity-75"
                     fill="currentColor"
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  ></path>
+                  />
                 </svg>
                 Sending...
               </span>
@@ -200,7 +200,7 @@
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    ></path>
+                    />
                   </svg>
                 </div>
                 <div>
@@ -212,30 +212,6 @@
                 </div>
               </div>
 
-              <div class="flex items-start space-x-4">
-                <div
-                  class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0"
-                >
-                  <svg
-                    class="w-6 h-6 text-orange-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    ></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900">Phone</h4>
-                  <p class="text-gray-600">+1 (555) 123-4567</p>
-                  <p class="text-sm text-gray-500">Mon-Fri, 9AM-6PM EST</p>
-                </div>
-              </div>
 
               <div class="flex items-start space-x-4">
                 <div
@@ -252,13 +228,13 @@
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    ></path>
+                    />
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    ></path>
+                    />
                   </svg>
                 </div>
                 <div>
@@ -293,7 +269,7 @@
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M5 13l4 4L19 7"
-                    ></path>
+                    />
                   </svg>
                 </div>
                 <span class="text-gray-700">Response within 24 hours</span>
@@ -313,7 +289,7 @@
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M5 13l4 4L19 7"
-                    ></path>
+                    />
                   </svg>
                 </div>
                 <span class="text-gray-700">Free initial consultation</span>
@@ -333,7 +309,7 @@
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M5 13l4 4L19 7"
-                    ></path>
+                    />
                   </svg>
                 </div>
                 <span class="text-gray-700">No commitment required</span>
@@ -354,8 +330,8 @@
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogAction
-            @click="showDialog = false"
             class="bg-orange-600 hover:bg-orange-700 transition-colors duration-300 text-white"
+            @click="showDialog = false"
           >
             Continue
           </AlertDialogAction>

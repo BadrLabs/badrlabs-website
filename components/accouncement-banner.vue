@@ -17,7 +17,7 @@
         Turn concepts into prototypes in as little as 2 months! Starting from just $5K.
       </span>
       <button 
-        class="hidden whitespace-nowrap underline ml-2 sm:inline transition-colors duration-300 hover:text-yellow-200" 
+        class="hidden whitespace-nowrap underline ml-2 sm:inline transition-colors duration-300 hover:text-yellow-200 cursor-pointer" 
         @click="scrollToContact"
       >
         Find Out More!
