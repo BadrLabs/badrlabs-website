@@ -13,7 +13,7 @@
         <div 
           v-for="(testimonial, index) in testimonials" 
           :key="index"
-          class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 group"
+          class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group"
         >
           <!-- Quote Icon -->
           <div class="text-orange-600 text-4xl mb-4 opacity-50 group-hover:opacity-100 transition-opacity duration-300">

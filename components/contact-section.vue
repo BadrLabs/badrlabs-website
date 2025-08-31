@@ -146,7 +146,7 @@
             <button
               type="submit"
               :disabled="isSubmitting"
-              class="w-full bg-orange-600 text-white py-4 px-8 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              class="w-full bg-orange-600 text-white py-4 px-8 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none cursor-pointer"
             >
               <span
                 v-if="isSubmitting"
