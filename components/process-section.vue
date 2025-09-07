@@ -35,7 +35,7 @@
               <!-- Pulse effect -->
               <div
                 class="absolute inset-0 rounded-full bg-orange-400 animate-ping opacity-20"
-              ></div>
+              />
             </div>
 
             <!-- Step Content -->
@@ -64,7 +64,7 @@
             <!-- Hover Effect -->
             <div
               class="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
-            ></div>
+            />
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
+              />
             </svg>
           </div>
           <h4 class="text-lg font-semibold text-gray-900 mb-2">
@@ -117,7 +117,7 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M13 10V3L4 14h7v7l9-11h-7z"
-              ></path>
+              />
             </svg>
           </div>
           <h4 class="text-lg font-semibold text-gray-900 mb-2">
@@ -146,7 +146,7 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-              ></path>
+              />
             </svg>
           </div>
           <h4 class="text-lg font-semibold text-gray-900 mb-2">
