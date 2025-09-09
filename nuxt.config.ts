@@ -4,6 +4,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon-large.png' }
+      ]
+    }
+  },
   vite: {
     plugins: [tailwindcss()],
   },

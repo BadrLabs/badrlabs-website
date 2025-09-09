@@ -25,7 +25,10 @@
 
         <!-- CTA Button -->
         <div class="hidden md:block">
-          <button class="bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+          <button 
+            @click="scrollToContact"
+            class="bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+          >
             Let's Collaborate
           </button>
         </div>
@@ -57,7 +60,10 @@
         >
           {{ item.name }}
         </NuxtLink>
-        <button class="w-full mt-4 bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-700 transition-colors duration-300">
+        <button 
+          @click="scrollToContact"
+          class="w-full mt-4 bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-700 transition-colors duration-300"
+        >
           let's collaborate
         </button>
       </div>
@@ -69,4 +75,17 @@
 const mobileMenuOpen = ref(false)
 
 const navigationItems = []
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact-section')
+  if (contactSection) {
+    const offsetTop = contactSection.offsetTop - 80 // Account for fixed header
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    })
+  }
+  // Close mobile menu if open
+  mobileMenuOpen.value = false
+}
 </script>

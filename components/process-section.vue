@@ -85,20 +85,6 @@
         </div>
       </div>
 
-      <!-- CTA Section -->
-      <div class="mt-16 text-center">
-        <div class="bg-gradient-to-r from-orange-50 to-blue-50 rounded-3xl p-8 md:p-12">
-          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Ready to start your project?
-          </h3>
-          <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Let's discuss how our proven process can bring your ideas to life and create something extraordinary together.
-          </p>
-          <button class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            Start Your Project
-          </button>
-        </div>
-      </div>
     </div>
   </section>
 </template>
