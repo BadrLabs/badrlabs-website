@@ -98,9 +98,9 @@
               >
                 <option value="">Select a project type</option>
                 <option value="website">Website Design & Development</option>
-                <option value="branding">Brand Identity & Design</option>
                 <option value="mobile">Mobile App Development</option>
-                <option value="ecommerce">E-commerce Solution</option>
+                <option value="ai-solution">AI Solution</option>
+                <option value="ecommerce">E-Commerce</option>
                 <option value="consulting">Digital Strategy Consulting</option>
                 <option value="other">Other</option>
               </select>
