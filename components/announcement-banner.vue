@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full fixed top-16 z-50 bg-gradient-to-r from-[#002844] via-blue-900 to-blue-900 text-white text-center text-base sm:text-lg font-black py-4 px-6 shadow-md"
+    class="w-full fixed top-16 z-10 bg-gradient-to-r from-[#002844] via-blue-900 to-blue-900 text-white text-center text-base sm:text-lg font-black py-4 px-6 shadow-md"
   >
     <div class="inline-flex items-center flex-nowrap">
       <!-- Mobile: Clickable short text -->
@@ -27,14 +27,13 @@
 
 <script setup lang="ts">
 const scrollToContact = () => {
-  const contactSection = document.getElementById('contact-section')
+  const contactSection = document.getElementById("contact-section");
   if (contactSection) {
-    const offsetTop = contactSection.offsetTop - 80 // Account for fixed header
+    const offsetTop = contactSection.offsetTop - 80; // Account for fixed header
     window.scrollTo({
       top: offsetTop,
-      behavior: 'smooth'
-    })
+      behavior: "smooth",
+    });
   }
-}
+};
 </script>
-
