@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white">
+  <section id="team-section" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center mb-16">
