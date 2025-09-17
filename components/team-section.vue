@@ -102,28 +102,28 @@ const teamMembers = [
   {
     name: 'Harun Sheikhali',
     role: 'Full Stack Developer',
-    bio: 'Seasoned web developer with 8+ years of experience, specializing in building high-performance, user-focused applications. Experienced in leading teams, mentoring developers, and driving projects from concept to delivery.',
+    bio: 'A seasoned developer with 8+ years of experience, specializing in building high-performance, user-focused applications. Experienced in leading teams, mentoring developers, and driving projects from concept to delivery.',
     avatar: 'headshots/harun_headshot.png',
     skills: ['React', 'Vue.js', 'Node.js', 'Next.js', 'Tailwind CSS', 'TypeScript'],
   },
   {
     name: 'Tamim Faruk',
     role: 'Data Engineer and Scientist',
-    bio: 'Specializes in Agentic AI systems, with a background in technical project management. Holds degrees in Mechatronics Engineering (BASc) and Biomedical Engineering (MASc), and has experience leading multi-million-dollar projects.',
+    bio: 'A versatile engineer who specializes in Agentic AI systems, with a background in technical project management. Holds degrees in Mechatronics Engineering (BASc) and Biomedical Engineering (MASc), and has experience leading multi-million-dollar projects.',
     avatar: 'headshots/tamim_headshot.png',
     skills: ['Python', 'Pytorch', 'Pydantic', 'Langchain', 'Databricks', 'Snowflake'],
   },
   {
     name: 'Omar Irfan',
     role: 'Full Stack Developer',
-    bio: 'With over 5 years of experience, delivers fast, accessible applications that align closely with real business needs, while crafting polished and intuitive user experiences that engage and delight.',
+    bio: 'A driven craftsman with 5+ years of experience. He delivers fast, accessible applications that align closely with real business needs, while crafting polished and intuitive user experiences that engage and delight.',
     avatar: 'headshots/omar_headshot.png',
     skills: ['React', 'Svelte', 'Next.js', 'Material UI', 'Tailwind CSS', 'TypeScript', 'FastAPI', 'Express.js'],
   },
   {
     name: 'Istiaq Ullah',
     role: 'Backend and Cloud Engineer',
-    bio: 'With over 5 years of experience, builds high-performance API services, cloud infrastructure, and data pipelines, with a focus on delivering scalable, reliable, and seamless digital experiences.',
+    bio: 'A passionate builder with 5+ years of experience, builds high-performance API services, cloud infrastructure, and data pipelines, with a focus on delivering scalable, reliable, and seamless digital experiences.',
     avatar: 'headshots/istiaq_headshot.png',
     skills: ['Node.js', 'Typescript', 'Kafka', 'Elasticsearch', 'Grafana','Kubernetes'],
   }
