@@ -85,47 +85,72 @@
             </div>
 
             <div>
-              <label
-                for="projectType"
-                class="block text-sm font-medium text-gray-700 mb-2"
-                >Project Type</label
-              >
-              <select
-                id="projectType"
-                v-model="form.projectType"
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
-              >
-                <option value="">Select a project type</option>
-                <option value="website">Website Design & Development</option>
-                <option value="mobile">Mobile App Development</option>
-                <option value="ai-solution">AI Solution</option>
-                <option value="ecommerce">E-Commerce</option>
-                <option value="consulting">Digital Strategy Consulting</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
+            <label
+              for="projectType"
+              class="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Project Type
+            </label>
 
-            <div>
-              <label
-                for="budget"
-                class="block text-sm font-medium text-gray-700 mb-2"
-                >Budget Range</label
-              >
-              <select
-                id="budget"
-                v-model="form.budget"
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
-              >
-                <option value="">Select budget range</option>
-                <option value="5k-10k">$5,000 - $10,000</option>
-                <option value="10k-25k">$10,000 - $25,000</option>
-                <option value="25k-50k">$25,000 - $50,000</option>
-                <option value="50k+">$50,000+</option>
-                <option value="discuss">Let's discuss</option>
-              </select>
-            </div>
+            <select
+              id="projectType"
+              v-model="form.projectType"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                    focus:ring-2 focus:ring-orange-500 focus:border-orange-500 
+                    transition-all duration-300"
+            >
+              <option value="">
+                Select a project type
+              </option>
+
+              <option value="website"
+                      title="Designing and developing responsive websites tailored to your brand and goals">
+                Website Design & Development
+              </option>
+
+              <option value="mobile"
+                      title="Building cross-platform or native mobile applications optimized for performance and usability">
+                Mobile App Development
+              </option>
+
+              <option value="dataAnalysis"
+                      title="Examining raw data to find patterns, trends, or insights">
+                Data Analysis
+              </option>
+
+              <option value="dataAnalytics"
+                      title="Using tools and systems to analyze data at scale and generate actionable insights">
+                Data Analytics
+              </option>
+
+              <option value="ai-solution"
+                      title="Developing AI-driven solutions such as chatbots, predictive models, or automation tools">
+                AI Solution
+              </option>
+
+              <option value="vibecodeCleanup"
+                      title="Refactoring and cleaning up legacy Vibecode projects for stability and maintainability">
+                Vibecode Cleanup
+              </option>
+
+              <option value="ecommerce"
+                      title="Creating online storefronts and commerce platforms with secure, scalable infrastructure">
+                E-Commerce
+              </option>
+
+              <option value="consulting"
+                      title="Advising on digital strategy, architecture, and technology adoption for business growth">
+                Digital Strategy Consulting
+              </option>
+
+              <option value="other"
+                      title="Select this if your project type doesn’t fit any of the listed categories">
+                Other
+              </option>
+            </select>
+          </div>
+
 
             <div>
               <label
@@ -361,7 +386,6 @@ const form = ref({
   email: "",
   company: "",
   projectType: "",
-  budget: "",
   message: "",
 });
 
@@ -382,7 +406,6 @@ const handleSubmit = async () => {
       email: form.value.email,
       company: form.value.company,
       projectType: form.value.projectType,
-      budget: form.value.budget,
       message: form.value.message,
     }),
   });
@@ -400,7 +423,6 @@ const handleSubmit = async () => {
     email: "",
     company: "",
     projectType: "",
-    budget: "",
     message: "",
   };
 

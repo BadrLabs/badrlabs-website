@@ -11,7 +11,8 @@
         </p>
       </div>
       <!-- Offerings Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <!-- Web Apps -->
         <div class="flex flex-col items-center w-full p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 shadow hover:shadow-lg transition-all duration-300 hover:scale-105 group">
           <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -22,6 +23,7 @@
           <p class="text-gray-600 text-center">Custom web applications designed for performance, scalability, and user engagement. We turn your vision into interactive digital experiences that grow your business.</p>
         </div>
 
+        <!-- Mobile Apps -->
         <div class="flex flex-col items-center w-full p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 shadow hover:shadow-lg transition-all duration-300 hover:scale-105 group">
           <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,6 +34,7 @@
           <p class="text-gray-600 text-center">Intuitive mobile solutions for iOS and Android. We create apps that delight users and drive engagement, helping you reach customers wherever they are.</p>
         </div>
 
+        <!-- AI Solutions -->
         <div class="flex flex-col items-center w-full p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 shadow hover:shadow-lg transition-all duration-300 hover:scale-105 group">
           <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,6 +46,7 @@
           <p class="text-gray-600 text-center">Harness the power of artificial intelligence to automate, analyze, and innovate. Our AI solutions help you unlock insights and create smarter workflows.</p>
         </div>
 
+        <!-- E-commerce -->
         <div class="flex flex-col items-center w-full p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 shadow hover:shadow-lg transition-all duration-300 hover:scale-105 group">
           <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,6 +56,31 @@
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">E-commerce</h3>
           <p class="text-gray-600 text-center">Robust e-commerce platforms that convert visitors into loyal customers. We build seamless shopping experiences that drive sales and grow your brand.</p>
+        </div>
+
+        <!-- Data Solutions -->
+        <div class="flex flex-col items-center w-full p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 shadow hover:shadow-lg transition-all duration-300 hover:scale-105 group">
+          <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <!-- Chart/analytics icon -->
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19h16M7 10v6M12 7v9M17 13v3"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Data Solutions</h3>
+          <p class="text-gray-600 text-center">Transforming data into actionable outcomes through tailored solutions in data analytics and data analysis.</p>
+        </div>
+
+        <!-- Vibecode Cleanup -->
+        <div class="flex flex-col items-center w-full p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 shadow hover:shadow-lg transition-all duration-300 hover:scale-105 group">
+          <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <!-- Wrench/maintenance icon -->
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Vibecode Cleanup</h3>
+          <p class="text-gray-600 text-center">Refactoring and stabilizing legacy Vibecode projects. Code cleanup, dependency updates, and performance improvements for reliable delivery.</p>
         </div>
       </div>
     </div>

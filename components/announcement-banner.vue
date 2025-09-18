@@ -12,7 +12,7 @@
       </button>
       <!-- Desktop: Full text and separate link -->
       <span class="hidden whitespace-nowrap sm:inline">
-        Turn concepts into prototypes in as little as 2 months! Starting from
+        Turn your dreams into brilliant designs! Polished prototypes starting at
         just $5K.
       </span>
       <button
