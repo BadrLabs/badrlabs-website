@@ -344,41 +344,12 @@
         </div>
       </div>
     </div>
-    <AlertDialog :open="showDialog">
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogTitle>Thank you for reach out!</AlertDialogTitle>
-          <AlertDialogDescription>
-            We've received your message and sent you a confirmation email. We'll
-            be in touch soon.
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogAction
-            class="bg-orange-600 hover:bg-orange-700 transition-colors duration-300 text-white"
-            @click="showDialog = false"
-          >
-            Continue
-          </AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
   </section>
 </template>
 
 <script setup lang="ts">
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
-
+const router = useRouter();
 const isSubmitting = ref(false);
-const showDialog = ref(false);
 
 const form = ref({
   firstName: "",
@@ -392,26 +363,26 @@ const form = ref({
 const handleSubmit = async () => {
   isSubmitting.value = true;
 
-  // This api will send two emails. One to us from the client with details about what they want
-  // Another email to the client indicating that we will respond in 24 hours
-  const response = await $fetch<{ success: boolean }>("https://formcarry.com/s/owmoAOb-wqm", {
-    method: "POST",
-    headers: {
-      "Accept": "application/json",
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      firstName: form.value.firstName,
-      lastName: form.value.lastName,
-      email: form.value.email,
-      company: form.value.company,
-      projectType: form.value.projectType,
-      message: form.value.message,
-    }),
-  });
+  // const response = await $fetch<{ success: boolean }>("https://formcarry.com/s/owmoAOb-wqm", {
+  //   method: "POST",
+  //   headers: {
+  //     "Accept": "application/json",
+  //     "Content-Type": "application/json"
+  //   },
+  //   body: JSON.stringify({
+  //     firstName: form.value.firstName,
+  //     lastName: form.value.lastName,
+  //     email: form.value.email,
+  //     company: form.value.company,
+  //     projectType: form.value.projectType,
+  //     message: form.value.message,
+  //   }),
+  // });
+  const response = { success: true };
 
   if (response.success) {
-    showDialog.value = true;
+    // Redirect to success page
+    await router.push("/contact-success");
   } else {
     console.log("Something went wrong. Please try again.");
   }

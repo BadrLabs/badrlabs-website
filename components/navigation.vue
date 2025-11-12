@@ -72,11 +72,22 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
+const router = useRouter()
 const mobileMenuOpen = ref(false)
 
 const navigationItems = []
 
-const scrollToContact = () => {
+const scrollToContact = async () => {
+  // If we're not on the home page, navigate to it first
+  if (route.path !== '/') {
+    await router.push('/')
+    // Wait for the page to load and render
+    await nextTick()
+    // Small delay to ensure DOM is ready
+    await new Promise(resolve => setTimeout(resolve, 100))
+  }
+  
   const contactSection = document.getElementById('contact-section')
   if (contactSection) {
     const offsetTop = contactSection.offsetTop - 80 // Account for fixed header
