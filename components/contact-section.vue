@@ -363,22 +363,21 @@ const form = ref({
 const handleSubmit = async () => {
   isSubmitting.value = true;
 
-  // const response = await $fetch<{ success: boolean }>("https://formcarry.com/s/owmoAOb-wqm", {
-  //   method: "POST",
-  //   headers: {
-  //     "Accept": "application/json",
-  //     "Content-Type": "application/json"
-  //   },
-  //   body: JSON.stringify({
-  //     firstName: form.value.firstName,
-  //     lastName: form.value.lastName,
-  //     email: form.value.email,
-  //     company: form.value.company,
-  //     projectType: form.value.projectType,
-  //     message: form.value.message,
-  //   }),
-  // });
-  const response = { success: true };
+  const response = await $fetch<{ success: boolean }>("https://formcarry.com/s/owmoAOb-wqm", {
+    method: "POST",
+    headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      firstName: form.value.firstName,
+      lastName: form.value.lastName,
+      email: form.value.email,
+      company: form.value.company,
+      projectType: form.value.projectType,
+      message: form.value.message,
+    }),
+  });
 
   if (response.success) {
     // Redirect to success page
