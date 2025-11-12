@@ -1,2 +1,4 @@
 User-Agent: *
-Disallow:
+Disallow: /_nuxt/
+
+Sitemap: https://badrlabs.com/sitemap.xml

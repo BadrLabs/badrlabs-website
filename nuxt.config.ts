@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'BadrLabs - Building Unique Digital Brands for Your Business',
+      title: 'BadrLabs | Software & Product Development Consultancy',
       meta: [
         // Basic SEO
         { name: 'description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream. We offer web apps, mobile apps, AI solutions, e-commerce, and data solutions.' },
@@ -18,16 +18,16 @@ export default defineNuxtConfig({
         
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'BadrLabs - Building Unique Digital Brands for Your Business' },
-        { property: 'og:description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream.' },
+        { property: 'og:title', content: 'BadrLabs | Software & Product Development Consultancy' },
+        { property: 'og:description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream. We offer web apps, mobile apps, AI solutions, e-commerce, and data solutions.' },
         { property: 'og:image', content: '/badrlabs-inline.png' },
         { property: 'og:url', content: 'https://badrlabs.com' },
         { property: 'og:site_name', content: 'BadrLabs' },
         
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'BadrLabs - Building Unique Digital Brands for Your Business' },
-        { name: 'twitter:description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream.' },
+        { name: 'twitter:title', content: 'BadrLabs | Software & Product Development Consultancy' },
+        { name: 'twitter:description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream. We offer web apps, mobile apps, AI solutions, e-commerce, and data solutions.' },
         { name: 'twitter:image', content: '/badrlabs-inline.png' },
         
         // Additional meta tags
