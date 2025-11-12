@@ -363,7 +363,7 @@ const form = ref({
 const handleSubmit = async () => {
   isSubmitting.value = true;
 
-  const response = await $fetch<{ success: boolean }>("https://formcarry.com/s/owmoAOb-wqm", {
+  const response = await $fetch<{ status: string }>("https://formcarry.com/s/owmoAOb-wqm", {
     method: "POST",
     headers: {
       "Accept": "application/json",
@@ -379,7 +379,7 @@ const handleSubmit = async () => {
     }),
   });
 
-  if (response.success) {
+  if (response.status === "success") {
     // Redirect to success page
     await router.push("/contact-success");
   } else {
