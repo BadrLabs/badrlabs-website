@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: 'BadrLabs - Building Unique Digital Brands for Your Business' },
         { property: 'og:description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream.' },
-        { property: 'og:image', content: '/badtlabs-inline.png' },
+        { property: 'og:image', content: '/badrlabs-inline.png' },
         { property: 'og:url', content: 'https://badrlabs.com' },
         { property: 'og:site_name', content: 'BadrLabs' },
         
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'BadrLabs - Building Unique Digital Brands for Your Business' },
         { name: 'twitter:description', content: 'At BadrLabs, we help businesses navigate tech complexity with clarity and speed—whether building from scratch or rescuing projects midstream.' },
-        { name: 'twitter:image', content: '/badtlabs-inline.png' },
+        { name: 'twitter:image', content: '/badrlabs-inline.png' },
         
         // Additional meta tags
         { name: 'theme-color', content: '#ea580c' }, // Orange-600 color
